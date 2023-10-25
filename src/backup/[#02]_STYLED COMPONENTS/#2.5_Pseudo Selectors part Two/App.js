@@ -4,6 +4,7 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
+
 const rotateAni = keyframes`
   from {
     transform: rotate(0deg);
