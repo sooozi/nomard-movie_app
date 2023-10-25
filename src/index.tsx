@@ -21,7 +21,8 @@ const lightTheme = {
 
 root.render(
   <React.StrictMode>
+    <ThemeProvider theme={darkTheme}>
       <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
-
