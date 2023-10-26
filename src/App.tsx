@@ -11,8 +11,6 @@ const Title = styled.h1`
   color: ${(props) => props.theme.textColor};
 `;
 
-
-
 function App() {
   return ( 
     <Wrapper>
