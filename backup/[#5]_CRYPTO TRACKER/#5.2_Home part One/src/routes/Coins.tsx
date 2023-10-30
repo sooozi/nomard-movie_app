@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -66,21 +65,21 @@ const coins = [
   },
 ];
 
-function Coins() {
-  return (
-    <Container>
-      <Header>
-        <Title>코인</Title>
-      </Header>
-      <CoinsList>
-        {coins.map((coin) => (
-          <Coin key={coin.id}>
-            <Link to={`/${coin.id}`}>{coin.name} &rarr;</Link>
-          </Coin>
-        ))}
-      </CoinsList>
-    </Container>
-  );
-}
+// function Coins() {
+//   return (
+//     <Container>
+//       <Header>
+//         <Title>코인</Title>
+//       </Header>
+//       <CoinsList>
+//         {coins.map((coin) => (
+//           <Coin key={coin.id}>
+//             <Link to={`/${coin.id}`}>{coin.name} &rarr;</Link>
+//           </Coin>
+//         ))}
+//       </CoinsList>
+//     </Container>
+//   );
+// }
 
-export default Coins;
+// export default Coins;
