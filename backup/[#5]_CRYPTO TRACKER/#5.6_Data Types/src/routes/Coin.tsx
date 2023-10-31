@@ -101,6 +101,7 @@ interface PriceData {
 //         ).json();
 //         setInfo(infoData);
 //         setPriceInfo(priceData);
+//         setLoading(false);  
 //     })();
 // }, []);
 //   return (
