@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import {
-    Link,
-    Route,
-    Switch,
-    useLocation,
-    useParams,
-    useRouteMatch,
+  Link,
+  Route,
+  Switch,
+  useLocation,
+  useParams,
+  useRouteMatch,
 } from "react-router-dom";
 import styled from "styled-components";
 import Chart from "./Chart";
@@ -50,6 +50,8 @@ const OverviewItem = styled.div`
 `;
 const Description = styled.p`
   margin: 20px 0px;
+  line-height: 1.3;
+  word-break: break-word;
 `;
 const Tabs = styled.div`
   display: grid;
@@ -169,26 +171,26 @@ function Coin() {
         <>
           <Overview>
             <OverviewItem>
-              <span>Rank:</span>
+              <span>Rank : </span>
               <span>{info?.rank}</span>
             </OverviewItem>
             <OverviewItem>
-              <span>Symbol:</span>
+              <span>Symbol : </span>
               <span>${info?.symbol}</span>
             </OverviewItem>
             <OverviewItem>
-              <span>Open Source:</span>
+              <span>Open Source : </span>
               <span>{info?.open_source ? "Yes" : "No"}</span>
             </OverviewItem>
           </Overview>
           <Description>{info?.description}</Description>
           <Overview>
             <OverviewItem>
-              <span>Total Suply:</span>
+              <span>Total Suply : </span>
               <span>{priceInfo?.total_supply}</span>
             </OverviewItem>
             <OverviewItem>
-              <span>Max Supply:</span>
+              <span>Max Supply : </span>
               <span>{priceInfo?.max_supply}</span>
             </OverviewItem>
           </Overview>

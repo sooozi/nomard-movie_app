@@ -39,6 +39,7 @@ const Coin = styled.li`
 const Title = styled.h1`
   font-size: 48px;
   color: ${(props) => props.theme.accentColor};
+  font-weight: bold;
 `;
 
 const Img = styled.img`
@@ -62,7 +63,7 @@ function Coins() {
   return (
     <Container>
       <Header>
-        <Title>코인</Title>
+        <Title>🪙 Coin 🪙</Title>
       </Header>
       {isLoading ? ("Loading...🪄") : (<CoinsList>
         {data?.slice(0, 100).map((coin) => (
