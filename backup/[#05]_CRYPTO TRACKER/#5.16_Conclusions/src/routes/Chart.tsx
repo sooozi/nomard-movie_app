@@ -70,7 +70,7 @@ function Chart({ coinId} : ChartProps) {
               type: "gradient",
               gradient: { gradientToColors: ["#799be0"], stops: [0, 80]},
             },
-            colors: ["#20ccc6"],
+            colors: ["#54198c"],
             //툴팁 옵션
             tooltip: {
               y: {
