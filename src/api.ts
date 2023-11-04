@@ -1,4 +1,5 @@
 const BASE_URL = `https://api.coinpaprika.com/v1`;
+const NOMARD_URL = `https://ohlcv-api.nomadcoders.workers.dev/?coinId=`;
 
 export function fetchCoins() {
   return fetch(`${BASE_URL}/coins`).then((response) => response.json());
@@ -18,6 +19,6 @@ export function fetchCoinTickers(coinId: string) {
 
 export function fetchCoinHistory(coinId: string) {
     return fetch(
-        `https://ohlcv-api.nomadcoders.workers.dev/?coinId=${coinId}`
+        `${NOMARD_URL}${coinId}`
     ).then((response) => response.json());
 }

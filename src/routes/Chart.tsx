@@ -26,7 +26,6 @@ function Chart({ coinId} : ChartProps) {
       ) : (
         <ApexChart
           type="line"
-          //우리가 보내고 싶은 모든 데이터가 들어있다.
           series={[
             {
               name: "Price",
@@ -40,24 +39,19 @@ function Chart({ coinId} : ChartProps) {
             chart: {
               height: 300,
               width: 500,
-              //툴바(다운로드, svg...) 옵션
               toolbar: {
                 show: false,
               },
               background: "transparent",
             },
-            //그리드 옵션
             grid: { show: false },
-            //선 옵션
             stroke: {
               curve: "smooth",
               width: 4,
             },
-            //y축 옵션
             yaxis: {
               show: false,
             },
-            //x축 옵션
             xaxis: {
               axisBorder: { show: false },
               axisTicks: { show: false },
@@ -65,13 +59,11 @@ function Chart({ coinId} : ChartProps) {
               type: "datetime",
               categories: data?.map(price => new Date(Number(price.time_close) * 1000).toUTCString()),
             },
-            //선 그라데이션 옵션
             fill:{
               type: "gradient",
               gradient: { gradientToColors: ["#799be0"], stops: [0, 80]},
             },
             colors: ["#20ccc6"],
-            //툴팁 옵션
             tooltip: {
               y: {
                 formatter: (value) => `$${value.toFixed(2)}`,

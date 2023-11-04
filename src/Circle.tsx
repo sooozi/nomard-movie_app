@@ -19,9 +19,11 @@ function Circle({bgColor, borderColor, text ="default text"} : ContainerProps) {
     const [counter, setCounter] = useState(1);
     const [value, setValue] = useState<number | string >(0);
     setCounter(2)
-    return <Container bgColor={bgColor} borderColor={borderColor ?? "black"}>
-        {text}
-    </Container>
+    return (
+        <Container bgColor={bgColor} borderColor={borderColor ?? "black"}>
+            {text}
+        </Container>
+    );
 }
 
 export default Circle;

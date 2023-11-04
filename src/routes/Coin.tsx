@@ -152,7 +152,6 @@ function Coin() {
     ["tickers", coinId],
     () => fetchCoinTickers(coinId),
     {
-      //해당 query를 5초마다 refetch한다.
       refetchInterval: 5000,
     }
   );
