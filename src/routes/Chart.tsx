@@ -62,7 +62,21 @@ function Chart({ coinId} : ChartProps) {
               axisBorder: { show: false },
               axisTicks: { show: false },
               labels: { show: false },
+              type: "datetime",
+              categories: data?.map(price => new Date(Number(price.time_close) * 1000).toUTCString()),
             },
+            //선 그라데이션 옵션
+            fill:{
+              type: "gradient",
+              gradient: { gradientToColors: ["#799be0"], stops: [0, 80]},
+            },
+            colors: ["#54198c"],
+            //툴팁 옵션
+            tooltip: {
+              y: {
+                formatter: (value) => `$${value.toFixed(2)}`,
+              }
+            }
           }}
         />
       )}
