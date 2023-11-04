@@ -67,7 +67,7 @@ function Coins() {
         <title>Coin Info App</title>
       </Helmet>
       <Header>
-        <Title>🪙 Coin 🪙</Title>
+        <Title>🪙 Hi! Coin 🪙</Title>
       </Header>
       {isLoading ? ("Loading...🪄") : (<CoinsList>
         {data?.slice(0, 100).map((coin) => (
