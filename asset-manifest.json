@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/nomard-movie_app/static/js/main.6bc939c7.js",
+    "index.html": "/nomard-movie_app/index.html",
+    "main.6bc939c7.js.map": "/nomard-movie_app/static/js/main.6bc939c7.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6bc939c7.js"
+  ]
+}
